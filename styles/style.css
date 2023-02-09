@@ -1,0 +1,164 @@
+:root{
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB82;
+    --cor-preta: #000;
+    --cor-branca:white;
+    --cor-fundo:#FAFBFF;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: 1s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header{
+    background-color:var(--cor-topo);
+    display: flex;
+    /* eixo y */
+    justify-content: space-between;
+    /* eixo x */
+    align-items: center;
+}
+
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+}
+#header nav a:hover{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 20px;
+}
+.marginlateral{
+    margin: 0px 20px;
+}
+main #banner{
+    background-image: url(../img/Banner.png);
+    height: calc(100vh - 116px) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+main #banner h1{
+    color: var(--cor-principal);
+    font-size: 2em;
+}
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 20px;
+}
+
+main #banner button:hover{
+    cursor:pointer
+}
+#header, main #banner button, #header nav a:hover, #bemVindo div,  #beneficios #beneficios-nossosbeneficios p,  #beneficios #beneficios-nossosbeneficios h3{
+    padding: 15px;
+}
+main #bemVindo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+main #bemVindo #bemVindo-boasvindas h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+main #beneficios{
+    background-color: var(--cor-fundo);
+}
+main #beneficios #beneficios-nossosbeneficios h3{
+    text-align: center;
+    color: var(--cor-principal);
+    font-size: 1.5em;
+}
+main #beneficios #beneficios-nossosbeneficios p{
+    text-align: center;
+}
+main #beneficios #beneficios-servicos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--cor-principal);
+}
+main #form #form-texto h3{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px;
+}
+main #form{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    padding: 40px;
+    background-position: left bottom;
+    background-size: absolute;
+    text-align: center;
+}
+main #form #form-formulario form input{
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    width: 380px;
+    margin-bottom: 10px;
+}
+main #form #form-formulario form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 380px;
+    cursor: pointer;
+}
+main #login h3{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 60px;
+}
+main #login{
+    text-align: center;
+}
+main #login #login-formulario form input{
+    padding: 15px;
+    border: none;
+    box-shadow: 0px 5px 5px gray;
+    border-radius: 10px;
+    width: 380px;
+    margin-bottom: 10px;
+}
+main #login #login-formulario form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 20px;
+    width: 330px;
+    cursor: pointer;
+}
+#rodape {
+    background-color: var(--cor-topo);
+    text-align: center;
+    padding: 20px;
+}
+#whats img{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    bottom: 30px;
+}
+#whats img:hover{
+    width:80px;
+    height:80px;
+}
