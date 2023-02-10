@@ -76,6 +76,7 @@ main #bemVindo #bemVindo-boasvindas h3{
 }
 main #beneficios{
     background-color: var(--cor-fundo);
+    padding: 50px;
 }
 main #beneficios #beneficios-nossosbeneficios h3{
     text-align: center;
@@ -91,20 +92,29 @@ main #beneficios #beneficios-servicos {
     text-align: center;
     color: var(--cor-principal);
 }
-main #form #form-texto h3{
-    text-align: center;
+main #form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #form #form-texto h3, p{
     font-size: 1.5em;
     padding: 15px;
+    text-align: center;
 }
-main #form{
+main #form #form-formulario{ 
     background-image: url(../img/dog.png);
     background-repeat: no-repeat;
     padding: 40px;
-    background-position: left bottom;
     background-size: absolute;
-    text-align: center;
+}
+main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 main #form #form-formulario form input{
+    display: block;
     padding: 15px;
     border: none;
     border-bottom: 1px solid black;
@@ -124,17 +134,25 @@ main #form #form-formulario form button{
 main #login h3{
     text-align: center;
     font-size: 1.5em;
-    padding: 60px;
+    padding: 15px;
 }
 main #login{
-    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main #login #login-formulario form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 main #login #login-formulario form input{
+    display: block;
     padding: 15px;
     border: none;
-    box-shadow: 0px 5px 5px gray;
-    border-radius: 10px;
-    width: 380px;
+    border-radius: 7px;
+    border-bottom: 1px solid black;
+    width: 320px;
     margin-bottom: 10px;
 }
 main #login #login-formulario form button{
@@ -143,7 +161,7 @@ main #login #login-formulario form button{
     background-color: var(--cor-principal);
     color: var(--cor-branca);
     border-radius: 20px;
-    width: 330px;
+    width: 360px;
     cursor: pointer;
 }
 #rodape {
